@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "244af106-cc48-4b90-b3a2-2cbcdb37f82e",
+		"name": "Apartdeman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "userId",
+						"value": "1"
+					},
+					{
+						"key": "token",
+						"value": "1q2w-3e4r-5t6y-7u8p"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"Test Title 2\",\n\t\"descr\":\"Test Title will add to apm_complaints 2\",\n\t\"stId\":1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/complaints/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"complaints",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/complaints/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"complaints",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "userId",
+						"value": "2"
+					},
+					{
+						"key": "token",
+						"value": "1q2w-3e4r-5t6y-7u8p"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"version\": 1,\n    \"isActv\": true,\n    \"title\": \"Test Title 1\",\n    \"descr\": \"Test Title will add to apm_complaints 1\",\n    \"cost\": 1.2,\n    \"stId\": 1,\n    \"uuser\": 2,\n    \"cuser\": 1,\n    \"cdate\": \"2018-09-01T18:15:26\",\n    \"udate\": \"2018-09-01T18:17:39\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/complaints/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"complaints",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "userId",
+						"value": "2"
+					},
+					{
+						"key": "token",
+						"value": "1q2w-3e4r-5t6y-7u8p"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=UTF-8"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/complaints/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"complaints",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actives",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/complaints/active/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"complaints",
+						"active",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteds",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/complaints/deleted/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"complaints",
+						"deleted",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
